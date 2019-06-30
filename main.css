@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#ffffff21, #000000da),
+    url('/assets/background.png');
+  background-position: center;
+  background-size: cover;
+  color: #cecece;
+}
+main {
+  height: 60vh;
+  text-align: center;
+}
+#title {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+h1 {
+  margin: auto;
+  font-size: 400%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+form {
+  position: relative;
+  width: 100%;
+}
+label {
+  font-size: 1.5em;
+  font-weight: 100;
+  position: absolute;
+  top: 0.6em;
+  left: 1em;
+  z-index: 0;
+  transition: all 0.2s;
+}
+input[type='text'] {
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.6em 1em;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #cecece70;
+}
+button {
+  font-size: 1.5em;
+  width: 53px;
+  height: 53px;
+  padding: 0.4em 0.5em;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  background: transparent;
+  top: 0.07em;
+  right: 1em;
+  display: flex;
+  cursor: pointer;
+}
+form img {
+  margin: auto;
+  width: 100%;
+}
+input[type='text']:focus ~ label,
+input[type='text']:valid ~ label {
+  top: -1.1em;
+  left: 1.3em;
+  font-size: 1.1em;
+}
+#tag {
+  margin-top: 40px;
+}
+#tag h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#credit {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+#credit a {
+  text-decoration: none;
+  color: #0000ff;
+}
