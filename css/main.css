@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#ffffff21, #000000da),
+    url('/assets/background.png');
+  background-position: center;
+  background-size: cover;
+  color: #cecece;
+}
+main {
+  height: 60vh;
+  text-align: center;
+}
+#title {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+}
+h1 {
+  margin: auto;
+  font-size: 400%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#tag {
+  margin-top: 40px;
+}
+#tag h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#credit {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+#credit a {
+  text-decoration: none;
+  color: #0000ff;
+}
